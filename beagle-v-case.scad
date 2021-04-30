@@ -17,4 +17,9 @@ module baseplate(width, length, height, radius, margin) {
     }
 }
 
-baseplate(84.8, 70.3, 5, 2.5, 0.6);
+
+margin = 0.6;
+radius = 2.5;
+height = 5;
+
+baseplate(85.0, 70.5, height, radius, margin);
