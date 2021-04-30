@@ -22,4 +22,13 @@ margin = 0.6;
 radius = 2.5;
 height = 5;
 
-baseplate(85.0, 70.5, height, radius, margin);
+difference() {
+    baseplate(85.0, 70.5, height, radius, margin);
+
+    // SD card hole
+    sdWidth=14.0;
+    sdHeight=2.5;
+    sdY = 27.8 + margin;
+    sdZ = 2.5 + margin;
+    translate([-0.01,sdY,sdZ]) cube([margin*3, sdWidth, sdHeight+0.01]);
+}
